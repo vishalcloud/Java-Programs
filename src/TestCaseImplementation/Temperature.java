@@ -1,3 +1,7 @@
+
+// Temperature Conversion Celcius to  to Farenheit
+
+
 package TestCaseImplementation;
 import java.util.Scanner;
 
@@ -19,7 +23,7 @@ public class Temperature {
 	}
 	public static void main(String[] args) {
 
-	Temperature.temp(45);
+	Temperature.temp(0);
 	}
 
 }

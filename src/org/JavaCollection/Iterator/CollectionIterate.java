@@ -1,7 +1,10 @@
-package org.JavaCollection;
+
+//Use of iterator Collection - hasnext() method 
+package org.JavaCollection.Iterator;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.ListIterator;
 
 public class CollectionIterate {
 	public void iterateMe() {
@@ -15,7 +18,6 @@ public class CollectionIterate {
 		while (itr.hasNext()) {
 			System.out.println(itr.next());
 		}
-
 	}
 
 	public static void main(String[] args) {
