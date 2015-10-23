@@ -10,8 +10,8 @@ public class TestTemperature {
 	public void testTemp() {
 		assertEquals(120,Temperature.temp(45));
 		
-			
+		
 	}
 
-
+	
 }
