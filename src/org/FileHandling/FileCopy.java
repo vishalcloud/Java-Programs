@@ -10,7 +10,7 @@ public class FileCopy {
 	public void fcopy() throws IOException {
 		FileInputStream fin = new FileInputStream("testop.txt");
 		FileOutputStream fout = new FileOutputStream("DestinationFile.txt");
-		System.out.println("Contents of Source File :" );
+		//System.out.println("Contents of Source File :" );
 		int i;
 		while ((i = fin.read()) != -1) {
 			System.out.print((char) i);

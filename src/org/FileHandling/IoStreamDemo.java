@@ -12,7 +12,7 @@ public class IoStreamDemo {
 		try {
 			FileOutputStream fout = new FileOutputStream("testop.txt");
 			String s = "*Integreted Decisions And Systems,Pune India";
-			byte b[] = s.getBytes();// converting string into byte array
+			byte b[] = s.getBytes();// convert string into byte array
 			fout.write(b);
 			fout.close();
 			System.out.println("successfully Written to file testop.txt");
