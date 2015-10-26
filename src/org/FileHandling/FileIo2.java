@@ -39,6 +39,11 @@ public class FileIo2 {
 			
 			int i = 0;
 			System.out.println("Total available Bytes in file : "+fout1.available());
+			System.out.println("is fout1 = fout? : " +fout1.equals(fout));
+			System.out.println(fout1.getClass());
+			
+			//System.out.println(fout1.toString());
+			
 			while ((i=fout1.read())!=-1)
 			{
 				System.out.print((char)i);
