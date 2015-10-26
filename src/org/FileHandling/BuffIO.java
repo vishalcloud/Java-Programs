@@ -2,11 +2,7 @@ package org.FileHandling;
 
 import java.io.BufferedInputStream;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.sql.Time;
-
-import javax.imageio.stream.FileImageOutputStream;
 
 public class BuffIO {
 
@@ -23,6 +19,7 @@ public class BuffIO {
 			{
 		//		System.out.print((char)i);
 			}
+			
 			
 			
 		}
@@ -66,13 +63,22 @@ public class BuffIO {
 		b.buff();
 		long endTime   = System.currentTimeMillis();
 		long totalTime = endTime - startTime;
+		
+		System.out.println("\n\n\n\n\n total time:");
 		System.out.println(totalTime);
+		
+
 		long startTime1 = System.currentTimeMillis();
+		
+		
+		//
 		BuffIO f = new BuffIO();
 		f.fileIoStream();
 		long endTime1   = System.currentTimeMillis();
 		long totalTime1 = endTime1 - startTime1;
+		System.out.println("\n\n\n\n\n");
 		System.out.println(totalTime1);
+		
 
 		
 				
