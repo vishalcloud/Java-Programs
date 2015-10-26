@@ -42,5 +42,6 @@ public class StringFunctions {
 		StringFunctions sca = new StringFunctions();
 		sca.strCharAt();
 	}
-
+	
+	
 }	

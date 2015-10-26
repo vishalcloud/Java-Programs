@@ -9,14 +9,17 @@ public class FileCopy {
 
 	public void fcopy() throws IOException {
 		FileInputStream fin = new FileInputStream("testop.txt");
+		FileInputStream fin2 = new FileInputStream("testop.txt");
 		FileOutputStream fout = new FileOutputStream("DestinationFile.txt");
-		//System.out.println("Contents of Source File :" );
+		System.out.println("Contents of Source File :" );
 		int i;
 		while ((i = fin.read()) != -1) {
 			System.out.print((char) i);
 		}
 		int i1 = 0;
-		while ((i1 = fin.read()) != -1) {
+		
+		System.out.println(fin.read());
+		while ((i1 = fin2.read()) != -1) {
 			fout.write((byte) i1);
 		}
 		System.out.println("\n \n \n Contents Copied into File DestinationFile.txt : ");

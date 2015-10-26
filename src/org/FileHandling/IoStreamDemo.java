@@ -3,12 +3,15 @@
 package org.FileHandling;
 
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.IOException;
 
 public class IoStreamDemo {
 
-	public static void main(String args[]) {
-		//output to file
+	public static void main(String args[]) throws IOException {
+			FileInputStream fin = new FileInputStream("testop.txt");
+			//output to file
 		try {
 			FileOutputStream fout = new FileOutputStream("testop.txt");
 			String s = "*Integreted Decisions And Systems,Pune India";
@@ -21,16 +24,21 @@ public class IoStreamDemo {
 		}
 		//Input to file
 		try {
-			FileInputStream fin = new FileInputStream("testop.txt");
 			int i = 0;
 			System.out.println("\n \n Contents of file testop.txt are :");
 			while ((i = fin.read()) != -1) {
 				System.out.print((char) i);
 			}
-			fin.close();
+			
 		} catch (Exception e) {
 			System.out.println(e);
+		
 		}
+		finally
+		{
+			fin.close();
+			System.out.println("\n File Closed");
+		}
+		
 	}
-
 }
