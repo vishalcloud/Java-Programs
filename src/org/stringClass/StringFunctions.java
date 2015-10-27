@@ -30,6 +30,13 @@ public class StringFunctions {
 		System.out.println(my_String.charAt(10));
 		
 	}
+	public void subString()
+	{
+		System.out.println("Substring From index 10 :"+my_String.substring(10));
+		System.out.println("Substring From index 25 to 35 :"+my_String.substring(25, 35));
+	}
+	
+	
 	public static void main(String[] args) {
 
 		System.out.println("Original Input String : "+my_String);
@@ -41,7 +48,9 @@ public class StringFunctions {
 		sse.strStartEnd();
 		StringFunctions sca = new StringFunctions();
 		sca.strCharAt();
-	}
+		StringFunctions sub = new StringFunctions();
+		sub.subString();	
+		}
 	
 	
 }	

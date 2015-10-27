@@ -17,7 +17,7 @@ public class BuffIO {
 			int i=0;
 			while((i = fin.read())!=-1)
 			{
-		//		System.out.print((char)i);
+				System.out.print((char)i);
 			}
 			
 			
