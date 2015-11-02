@@ -32,12 +32,14 @@ public class Grades {
 				
 			}
 		}
+	int x;
 	
 	
 	public static void main(String[] args) {
 				
 		Grades g = new Grades();
 		g.grade();
+	
 	}
 
 }

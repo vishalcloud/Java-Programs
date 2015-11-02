@@ -6,7 +6,12 @@ public class TestGreatest {
 
 	@Test
 	public void testFindGreatestNumber() {
-		assertEquals(6,Greatest.findGreatestNumber(2, 6, 2));
+		Greatest newGreatest = new Greatest();
+		System.out.println(newGreatest.getMax());
+		newGreatest.findGreatestNumber(2, 69, 200);
+		System.out.println(newGreatest.getMax());
+		
+		assertEquals(200,newGreatest.getMax()); // how to access instance variables outside class
 		
 	}
 
