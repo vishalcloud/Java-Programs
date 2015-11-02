@@ -15,9 +15,10 @@ public class BuffIO {
 		
 		try{
 			int i=0;
-			while((i = fin.read())!=-1)
+			byte [] buffer = new byte[1024*1024];  
+			while((i = fin.read(buffer))!=-1)
 			{
-				System.out.print((char)i);
+				//System.out.print((char)i);
 			}
 			
 			
