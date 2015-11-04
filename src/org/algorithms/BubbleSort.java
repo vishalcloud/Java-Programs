@@ -15,12 +15,15 @@ public class BubbleSort {
 				}
 			}
 		}
+		//return num;
+		
 	}
 
 	public static void main(String[] args) {
 		BubbleSort bSort = new BubbleSort();
 		int[] num = { 20, 10, 30, 80, 40, 50, 10 };
 		System.out.println("Array elements to be sorted :");
+	
 		for (int i = 0; i < num.length; i++) {
 			System.out.print(num[i] + " ");
 		}

@@ -6,7 +6,6 @@ import java.io.IOException;
 
 public class BuffIO {
 
-
 	public void buff() throws IOException
 	{
 	        		
@@ -21,8 +20,7 @@ public class BuffIO {
 				//System.out.print((char)i);
 			}
 			
-			
-			
+					
 		}
 		catch(Exception e)
 		{
